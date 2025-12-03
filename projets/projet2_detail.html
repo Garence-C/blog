@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Détail du projet - R3st0.fr</title>
+  <link rel="stylesheet" href="projet1_detail_style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-glass-base"></div>
+    <div class="nav-glass-tint"></div>
+    <div class="nav-glass-shine"></div>
+    <div class="nav-content">
+      <ul class="nav-links">
+        <li><a href="../main/index.html">Accueil</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-spacer"></div>
+
+  <!-- Header Projet -->
+  <div class="section dark text-center">
+    <h1>Détail du projet : R3st0.fr</h1>
+    <p>Un aperçu complet de la réalisation du projet</p>
+  </div>
+
+  <!-- Image du projet -->
+  <div class="section">
+    <div class="boxed text-center">
+      <img src="../img/site_resto.png" alt="Aperçu du projet" style="width:80%; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.4);" />
+    </div>
+  </div>
+
+  <!-- Description du projet -->
+  <!-- Section Description du projet - Réorganisée pour accueillir beaucoup de texte -->
+<div class="section dark">
+  <div class="boxed">
+    <h2 class="text-center">Description du projet</h2>
+
+    <!-- Nouvelle organisation : blocs séparés + meilleure lisibilité -->
+    <div class="project-description">
+
+      <!-- Bloc : Contexte -->
+      <div class="description-block">
+        <h3>Contexte</h3>
+        <p>
+          R3st0.fr est un site de critique de restaurants inspiré de TripAdvisor et La Fourchette. L'objectif est de permettre aux utilisateurs de rechercher des restaurants, consulter leurs caractéristiques, lire les avis et noter les établissements. Développé en 2ème année BTS SIO selon la méthode agile Scrum.
+        </p>      
+        </div>
+
+      <!-- Bloc : Objectifs -->
+      <div class="description-block">
+        <h3>Objectifs</h3>
+        <ul>
+          <li>Travailler en équipe avec méthodologie Scrum (rôles : Product Owner, Scrum Master, équipe dev)</li>
+          <li>Gérer un projet par itérations courtes (sprints de 1 à 2 séances)</li>
+          <li>Utiliser GitLab pour la gestion de version, les branches, les tickets (Issues) et le Kanban</li>
+          <li>Traiter des tickets de maintenance et ajouter de nouvelles fonctionnalités</li>
+          <li>Déployer l'application en continu sur un serveur de production</li>
+        </ul>
+      </div>
+
+      <!-- Bloc : Fonctionnalités -->
+      <div class="description-block">
+        <h3>Fonctionnalités implémentées</h3>
+        <ul>
+          <li>Visiteur non authentifié : Recherche multi-critères de restaurants, consultation des fiches détaillées et des avis</li>
+          <li>Utilisateur authentifié : Personnalisation du profil, ajout de restaurants favoris, publication d'avis et notation (1 à 5 étoiles)</li>
+          <li>Administrateur : Gestion des contenus du site (restaurants, avis, utilisateurs)</li>
+          <li>Affichage des types de cuisine : Ajout d'une nouvelle fonctionnalité pour filtrer par type de cuisine</li>
+        </ul>
+      </div>
+
+      <!-- Bloc : Technologies -->
+      <div class="description-block">
+        <h3>Technologies & outils utilisés</h3>
+        <ul>
+          <li>IDE : NetBeans v.21+</li>
+          <li>Gestion de version : GitLab (branches, merge, issues)</li>
+          <li>Tableau Kanban : GitLab Issues Board (colonnes : À faire, En cours, Terminé)</li>
+          <li>Labels : Complexité (peu complexe, moyenne, complexe) et Priorité (peu prioritaire, normale, prioritaire)</li>
+          <li>Déploiement : Serveur web BTS SIO avec compte FTP et base MariaDB</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- Compétences mobilisées -->
+  <div class="section">
+    <div class="boxed text-center">
+      <h2>Compétences Mobilisées</h2>
+
+      <div class="flex gap20">
+        <div class="w25 skill">
+          <h3>Traiter des demandes concernant les applications</h3>
+          <br/>
+          <p>Résolution de tickets de maintenance, traitement des demandes d'évolution fonctionnelle du Product Owner.</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Analyser les objectifs et modalités d'organisation d'un projet</h3>
+          <br/>
+          <p>Compréhension de la méthode Scrum, définition des rôles (Product Owner, Scrum Master), analyse des User Stories.</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Planifier les activités</h3>
+          <br/>
+          <p>Organisation des sprints, daily scrums quotidiens, utilisation du Kanban GitLab, affectation et priorisation des tickets.</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Évaluer les indicateurs de suivi d'un projet</h3>
+          <br/>
+          <p>Suivi de l'avancement des tickets sur le tableau Kanban, analyse des écarts entre planifié et réalisé lors des daily scrums.</p>
+        </div>
+      </div>
+
+      <div class="flex gap20">
+
+        <div class="w25 skill">
+          <h3>Identifier, développer ou adapter des composants logiciels</h3>
+          <br/>
+          <p>Développement et adaptation de composants Symfony, modification de la base de données, création de nouvelles fonctionnalités.</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Utiliser des composants d'accès aux données</h3>
+          <br/>
+          <p>Utilisation de Doctrine ORM pour l'accès à la base MariaDB, requêtes SQL, gestion des relations entre entités.</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Réaliser les tests nécessaires à la validation</h3>
+          <br/>
+          <p>Tests en local de chaque ticket avant merge, documentation des tests dans les rapports d'itération.</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Rédiger des documentations technique et d'utilisation</h3>
+          <br/>
+          <p>Rédaction de rapports d'itération, documentation des tickets (diagnostic, localisation, modifications, tests), commentaires du code.</p>
+        </div>
+      </div>
+
+      <div class="flex gap20">
+        <div class="w25 skill">
+          <h3>Exploiter les fonctionnalités d'un environnement de développement</h3>
+          <br/>
+          <p>Maîtrise de NetBeans, gestion des branches Git, utilisation de GitLab (merge, issues, labels, jalons).</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Déployer un service</h3>
+          <br/>
+          <p>Déploiement continu sur serveur de production (FTP, configuration MariaDB), livraison continue à chaque itération.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

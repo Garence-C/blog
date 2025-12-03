@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Détail du projet - Site vitrine</title>
+  <link rel="stylesheet" href="projet1_detail_style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-glass-base"></div>
+    <div class="nav-glass-tint"></div>
+    <div class="nav-glass-shine"></div>
+    <div class="nav-content">
+      <ul class="nav-links">
+        <li><a href="../main/index.html">Accueil</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-spacer"></div>
+
+  <!-- Header Projet -->
+  <div class="section dark text-center">
+    <h1>Détail du projet : Thali mini</h1>
+    <p>Un aperçu complet de la réalisation du projet</p>
+  </div>
+
+  <!-- Image du projet -->
+  <div class="section">
+    <div class="boxed text-center">
+      <img src="../img/photo_projet_thali_mini.png" alt="Aperçu du projet" style="width:80%; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.4);" />
+    </div>
+  </div>
+
+  <!-- Description du projet -->
+  <!-- Section Description du projet - Réorganisée pour accueillir beaucoup de texte -->
+<div class="section dark">
+  <div class="boxed">
+    <h2 class="text-center">Description du projet</h2>
+
+    <!-- Nouvelle organisation : blocs séparés + meilleure lisibilité -->
+    <div class="project-description">
+
+      <!-- Bloc : Contexte -->
+      <div class="description-block">
+        <h3>Contexte</h3>
+        <p>
+          THALI est un centre de thalassothérapie souhaitant proposer un catalogue de mini-excursions organisées l'après-midi pour ses curistes. En tant que stagiaire chez STESIO (ESN mandatée), j'ai développé le module THALI-MINI pour gérer ces excursions et leurs étapes.        </p>
+      </div>
+
+      <!-- Bloc : Objectifs -->
+      <div class="description-block">
+        <h3>Objectifs</h3>
+        <ul>
+          <li>Développer une application Java orientée objet avec architecture en couches</li>
+          <li>Implémenter un CRUD complet (Create, Read, Update, Delete) sur les excursions et leurs étapes</li>
+          <li>Utiliser le pattern DAO pour l'accès à la base de données MariaDB</li>
+          <li>Créer une interface graphique utilisateur avec Swing (JFrame, JDialog)</li>
+          <li>Gérer les relations entre entités (une excursion contient plusieurs étapes ordonnées)</li>
+        </ul>
+      </div>
+
+      <!-- Bloc : Fonctionnalités -->
+      <div class="description-block">
+        <h3>Fonctionnalités implémentées</h3>
+        <ul>
+          <li>Consultation de la liste des excursions avec leurs informations détaillées</li>
+          <li>Ajout, modification et suppression d'excursions</li>
+          <li>Gestion complète des étapes d'une excursion (CRUD)</li>
+          <li>Réorganisation de l'ordre des étapes (déplacement haut/bas)</li>
+          <li>Calcul automatique de la durée totale d'une excursion</li>
+          <li>Validation des données saisies avant enregistrement en base</li>
+        </ul>
+      </div>
+
+      <!-- Bloc : Technologies -->
+      <div class="description-block">
+        <h3>Technologies & outils utilisés</h3>
+        <ul>
+          <li>Langage : Java avec EDI NetBeans</li>
+          <li>Base de données : MariaDB/MySQL avec utilisateur dédié</li>
+          <li>Pattern architectural : DAO (Data Access Object)</li>
+          <li>Framework GUI : Swing (javax.swing)</li>
+          <li>Connecteur JDBC : MySQL Connector/J</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- Compétences mobilisées -->
+  <div class="section">
+    <div class="boxed text-center">
+      <h2>Compétences Mobilisées</h2>
+
+      <div class="flex gap20">
+        <div class="w25 skill">
+          <h3>Traiter des demandes concernant les applications</h3>
+          <br/>
+          <p>Collecte et traitement des demandes de fonctionnalités du client THALI. Implémentation des différentes étapes du CRUD selon les besoins exprimés.</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Analyser les objectifs et modalités d'organisation d'un projet</h3>
+          <br/>
+          <p>Analyse du cahier des charges fourni, identification des parties prenantes (THALI, STESIO), compréhension du contexte métier de la thalassothérapie.</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Planifier les activités</h3>
+          <br/>
+          <p>Organisation du travail en binôme, planification des 11 étapes du projet avec remise de livrables à chaque étape, gestion du temps et des priorités.</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Identifier, développer, utiliser ou adapter des composants logiciels</h3>
+          <br/>
+          <p>Utilisation de composants Swing (JFrame, JDialog, JComboBox, JTable), adaptation des classes DAO existantes, création de nouveaux composants métier.</p>
+        </div>
+      </div>
+
+      <div class="flex gap20">
+
+        <div class="w25 skill">
+          <h3>Utiliser des composants d'accès aux données</h3>
+          <br/>
+          <p>Implémentation du pattern DAO pour l'accès à MariaDB. Développement de méthodes CRUD avec JDBC (connexion, PreparedStatement, ResultSet, transactions).</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Réaliser les tests nécessaires à la validation</h3>
+          <br/>
+          <p>Conception et exécution de tests unitaires (JUnit), tests fonctionnels de l'interface utilisateur, validation des données saisies, vérification en base de données.</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Rédiger des documentations technique et d'utilisation</h3>
+          <br/>
+          <p>Rédaction de comptes-rendus pour chaque étape, documentation du code avec commentaires, rapports de tests, bilans des difficultés rencontrées.</p>
+        </div>
+
+        <div class="w25 skill">
+          <h3>Exploiter les fonctionnalités d'un environnement de développement</h3>
+          <br/>
+          <p>Maîtrise de NetBeans pour le développement Java (débogueur, refactoring), gestion de la base de données depuis l'IDE, utilisation du connecteur JDBC.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

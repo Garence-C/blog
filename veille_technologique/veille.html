@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veille technologique</title>
+  <link rel="stylesheet" href="style_veille.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-glass-base"></div>
+    <div class="nav-glass-tint"></div>
+    <div class="nav-glass-shine"></div>
+    <div class="nav-content">
+      <ul class="nav-links">
+        <li><a href="../main/index.html">Accueil</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-spacer"></div>
+
+  <!-- Header Projet -->
+  <div class="section dark text-center">
+    <h1>Veille Techologique</h1>
+    <p>La sécurisation des API (JWT, OAuth2)</p>
+  </div>
+
+
+  <div class="rss-section">
+    <h2 class="rss-title">Veille technologique – Sécurisation des API</h2>
+    <div id="rss-cards" class="rss-cards">Chargement des articles...</div>
+</div>
+
+
+  <script>
+const RSS_URL = "https://api.rss2json.com/v1/api.json?rss_url=https://apisecurity.io/feed/index.xml";
+
+fetch(RSS_URL)
+    .then(response => response.json())
+    .then(data => {
+        const container = document.getElementById("rss-cards");
+        container.innerHTML = "";
+
+        data.items.slice(0, 6).forEach(item => {
+            const card = document.createElement("div");
+            card.classList.add("rss-card");
+
+            card.innerHTML = `
+                <h3>${item.title}</h3>
+                <p>${item.description.replace(/<[^>]+>/g, '').substring(0, 150)}...</p>
+                <a href="${item.link}" target="_blank">Lire l’article →</a>
+            `;
+
+            container.appendChild(card);
+        });
+    })
+    .catch(error => {
+        document.getElementById("rss-cards").innerHTML =
+            "<p>⚠️ Impossible de charger le flux RSS.</p>";
+        console.error(error);
+    });
+</script>
+
+  <!-- Description du projet -->
+  <!-- Section Description du projet - Réorganisée pour accueillir beaucoup de texte -->
+<div class="section dark">
+  <div class="boxed">
+    <h2 class="text-center">Synthèse de la Veille</h2>
+
+    <!-- Nouvelle organisation : blocs séparés + meilleure lisibilité -->
+    <div class="project-description">
+
+      <!-- Bloc : Objectifs -->
+      <div class="description-block">
+        <h3>Les API sont devenues essentielles dans les architectures web modernes, ce qui
+        renforce la nécessité de les sécuriser. Deux techniques dominent actuellement :</h3>
+        <br/>
+        <br/>
+        <ul>
+          <li><strong>JWT</strong> : token stateless, rapide mais nécessitant une bonne gestion de la durée et du stockage.</li>
+          <br/>
+          <li><strong>OAuth2</strong> : standard d'autorisation robuste basé sur différents flux(Authorization Code, Client Credentials...).</li>
+        </ul>
+        <br/>
+        <br/>
+        <p>
+          <strong>
+            La tendance montre une adoption croissante de OAuth2 + JWT ensemble pour sécuriser efficacement les API REST.
+          </strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
