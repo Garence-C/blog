@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Détail du projet - Site Web R3st0</title>
+  <link rel="stylesheet" href="projet1_detail_style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-glass-base"></div>
+    <div class="nav-glass-tint"></div>
+    <div class="nav-glass-shine"></div>
+    <div class="nav-content">
+      <ul class="nav-links">
+        <li><a href="../main/index.html">Accueil</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-spacer"></div>
+
+  <!-- Header Projet -->
+  <header class="project-header text-center">
+    <div class="boxed">
+      <h1>Site Web R3st0</h1>
+      <p class="subtitle">Un aperçu complet de la réalisation du projet</p>
+    </div>
+  </header>
+
+  <!-- Image du projet -->
+  <div class="section">
+    <div class="boxed text-center">
+      <img src="../img/site_resto.png" alt="Aperçu du projet" class="hero-image" />
+    </div>
+  </div>
+
+  <!-- Description du projet -->
+  <div class="section dark">
+    <div class="boxed text-center">
+      <h2 class="section-title">Description du projet</h2>
+
+      <div class="grid-cards">
+
+        <!-- Bloc : Description -->
+        <div class="glass-card-dark">
+          <h3>Description</h3>
+          <p>
+            Site web de critique et notation de restaurants développé en équipe selon la méthode Scrum avec itérations, tickets de maintenance, déploiement continu et gestion GitLab.
+          </p>
+        </div>
+
+        <!-- Bloc : Contexte -->
+        <div class="glass-card-dark">
+          <h3>Contexte</h3>
+          <p>
+            R3st0.fr est un site de critique de restaurants inspiré de TripAdvisor et La Fourchette. L'objectif est de permettre aux utilisateurs de rechercher des restaurants, consulter leurs caractéristiques, lire les avis et noter les établissements. Développé en 2ème année BTS SIO selon la méthode agile Scrum.
+          </p>
+        </div>
+
+        <!-- Bloc : Objectifs -->
+        <div class="glass-card-dark">
+          <h3>Objectifs</h3>
+          <ul>
+            <li>Travailler en équipe avec méthodologie Scrum (Product Owner, Scrum Master, dev).</li>
+            <li>Gérer un projet par itérations courtes (sprints de 1 à 2 séances).</li>
+            <li>Utiliser GitLab pour la gestion de version, les branches, les tickets et le Kanban.</li>
+            <li>Traiter des tickets de maintenance et déployer l'application en continu.</li>
+          </ul>
+        </div>
+
+        <!-- Bloc : Fonctionnalités -->
+        <div class="glass-card-dark">
+          <h3>Fonctionnalités implémentées</h3>
+          <ul>
+            <li>Visiteur non authentifié : Recherche multi-critères, consultation des fiches et avis.</li>
+            <li>Utilisateur authentifié : Profil, ajout de restaurants favoris, publication d'avis et notation.</li>
+            <li>Administrateur : Gestion des contenus du site (restaurants, avis, utilisateurs).</li>
+            <li>Types de cuisine : Ajout d'une nouvelle fonctionnalité pour filtrer par type de cuisine.</li>
+          </ul>
+        </div>
+
+        <!-- Bloc : Méthode de gestion Scrum -->
+        <div class="glass-card-dark">
+          <h3>Méthode de gestion Scrum</h3>
+          <ul>
+            <li>Product Owner & Scrum Master : Définition des besoins, animation des daily scrums.</li>
+            <li>Sprints/Itérations : Durée de 1 à 2 séances, livraison d'une version fonctionnelle.</li>
+            <li>Daily Scrum & Backlog : Réunion quotidienne et liste priorisée des tâches.</li>
+          </ul>
+        </div>
+
+        <!-- Bloc : Technologies -->
+        <div class="glass-card-dark">
+          <h3>Technologies & outils utilisés</h3>
+          <ul>
+            <li>IDE : Android Studio pour le développement mobile</li>
+            <li>Langage : Java Android avec API niveau 21+ (Lollipop)</li>
+            <li>Backend : PHP 7+ pour l'API REST, MariaDB pour la base de données</li>
+            <li>Communication : HttpURLConnection, JSONObject, BufferedReader</li>
+            <li>Gestion de version : GitLab avec branches par itération</li>
+            <li>Maquettage : Canva pour les prototypes graphiques</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Compétences mobilisées -->
+  <div class="section">
+    <div class="boxed text-center">
+      <h2 class="section-title">Compétences Mobilisées</h2>
+
+      <div class="grid-cards">
+        <div class="premium-card-dark text-left">
+          <h3>Répondre aux incidents et évolutions (Compétence 2)</h3>
+          <p>
+            Traiter des demandes : Résolution de tickets de maintenance, traitement des demandes d'évolution du Product Owner. Utilisation d'un outil de gestion de tickets (GitLab Issues). Application d'une méthode de diagnostic.
+          </p>
+        </div>
+
+        <div class="premium-card-dark text-left">
+          <h3>Travailler en mode projet (Compétence 4)</h3>
+          <p>
+            Analyser et Planifier : Compréhension de la méthode Scrum, analyse des User Stories. Organisation des sprints, daily scrums, utilisation du Kanban GitLab, affectation et priorisation des tickets.
+          </p>
+        </div>
+
+        <div class="premium-card-dark text-left">
+          <h3>Mettre à disposition un service (Compétence 5)</h3>
+          <p>
+            Tests et Déploiement : Tests en local de chaque ticket avant merge. Déploiement continu sur serveur de production (FTP, configuration MariaDB), livraison continue à chaque itération.
+          </p>
+        </div>
+
+        <div class="premium-card-dark text-left">
+          <h3>Organiser son développement (Compétence 6)</h3>
+          <p>
+            Environnement & Développement : Gestion des branches Git, utilisation de GitLab. Développement de composants Symfony, utilisation de Doctrine ORM pour l'accès MariaDB.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Comptes rendus et livrables -->
+  <div class="section dark">
+    <div class="boxed text-center">
+      <h2 class="section-title">Comptes rendus et livrables</h2>
+
+      <div class="flex-center">
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Rapport Itération 1 - Installation et étude</h3>
+          <p>Ré-ingénierie de la base de données, analyse de l'architecture du code, daily scrums.</p>
+          <a href="../docs/Guibert_Noah_2SLAM_AP_Itération1_Partie_2.pdf" class="btn-projet">PDF Itération 1</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Rapport Itération 2 - Résolution de tickets</h3>
+          <p>Documentation des tickets résolus (diagnostic, localisation, modifications, tests).</p>
+          <a href="../docs/Projet_Site_Web_R3st0.fr_Itération_2.pdf" class="btn-projet">PDF Itération 2</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Rapport Itération 3 - Types de cuisine</h3>
+          <p>User Story, modification BDD, développement de la fonctionnalité, déploiement.</p>
+          <a href="../docs/Projet_Site_Web_R3st0_Itération_n°3.pdf" class="btn-projet">PDF Itération 3</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Repository GitLab</h3>
+          <p>Code source complet avec branches par ticket, historique des commits et merges.</p>
+          <a href="https://gitlab.com/romain.gloria.rg/p1_g7_siteresto2025" class="btn-projet">GitLab</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Site déployé en production</h3>
+          <p>Application web fonctionnelle sur serveur BTS SIO (FTP + MariaDB).</p>
+          <a href="https://gitlab.com/romain.gloria.rg/p1_g7_siteresto2025" class="btn-projet">Voir le site</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

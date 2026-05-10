@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Mon portfolio</title>
+  <meta name="description" content="Ceci est mon portfolio étudiant" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- SVG Filters for Liquid Glass Effect -->
+  <svg>
+    <defs>
+      <filter id="glass-distortion">
+        <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-glass-base"></div>
+    <div class="nav-glass-tint"></div>
+    <div class="nav-glass-shine"></div>
+
+    <div class="nav-content">
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="../veille_technologique/veille.html">Veille</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Bande pour éviter que la navbar morde sur l'image -->
+  <div class="nav-spacer"></div>
+
+  <!-- Slider / Hero -->
+  <div class="slider" id="home">
+    <img src="../img/comete.jpg" class="slider-background" alt="Fond comète" />
+    <div class="slider-content">
+      <h1>CHIRADE Garence</h1>
+      <p>Étudiant en BTS SIO</p>
+    </div>
+  </div>
+
+  <!-- À propos -->
+  <div class="section" id="about">
+    <div class="boxed">
+      <div class="glass-card-light" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+        <div class="w40 text-center" style="min-width: 300px;">
+          <h2 class="section-title" style="margin-bottom: 0;">À propos de moi</h2>
+        </div>
+        <div class="w60" style="min-width: 300px; flex: 1;">
+          <p style="margin-bottom: 15px;">
+            Je m'appelle Garence et je suis étudiante en BTS SIO, option SLAM, une formation orientée vers le
+            développement d'applications et de solutions logicielles.
+          </p>
+          <p style="margin-bottom: 15px;">
+            L'informatique me passionne depuis très jeune, et cette voie me permet de transformer cette curiosité en
+            compétences concrètes, notamment en développement et en programmation.
+          </p>
+          <p>
+            Au fil de ma formation, je souhaite continuer à progresser, créer des projets utiles et préparer mon avenir
+            dans les métiers du développement informatique.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Compétences -->
+  <div class="section dark" id="competences">
+    <div class="boxed text-center">
+      <h2 class="section-title">Découvrez mes compétences</h2>
+      <div class="grid-cards">
+        <div class="premium-card-dark skill end2">
+          <a href="https://www.python.org/">
+            <img src="../img/python.png" alt="Logo Python">
+          </a>
+          <h3>Python</h3>
+        </div>
+        <div class="premium-card-dark skill end2">
+          <a href="https://fr.wikipedia.org/wiki/C%2B%2B/">
+            <img src="../img/c++.png" alt="Logo C++">
+          </a>
+          <h3>C++</h3>
+        </div>
+        <div class="premium-card-dark skill end2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML">
+            <img src="../img/html.png" alt="Logo HTML">
+          </a>
+          <h3>HTML</h3>
+        </div>
+        <div class="premium-card-dark skill end2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/CSS">
+            <img src="../img/css.png" alt="Logo CSS">
+          </a>
+          <h3>CSS</h3>
+        </div>
+        <div class="premium-card-dark skill end2">
+          <a href="https://fr.wikipedia.org/wiki/Structured_Query_Language">
+            <img src="../img/sql.png" alt="Logo SQL" style="width:70%;">
+          </a>
+          <h3>SQL</h3>
+        </div>
+        <div class="premium-card-dark skill end2">
+          <a href="https://fr.wikipedia.org/wiki/Java_(langage)">
+            <img src="../img/java.png" alt="Logo Java" style="width:25%;">
+          </a>
+          <h3>Java</h3>
+        </div>
+        <div class="premium-card-dark skill end2">
+          <a href="https://fr.wikipedia.org/wiki/PHP">
+            <img src="../img/php.png" alt="Logo PHP" style="width:50%;">
+          </a>
+          <h3>PHP</h3>
+        </div>
+        <div class="premium-card-dark skill end2">
+          <a href="https://fr.react.dev/">
+            <img src="../img/react.png" alt="Logo React">
+          </a>
+          <h3>React</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="projets">
+    <div class="boxed text-center">
+      <h2 class="section-title">Découvrez mes projets</h2>
+        <div class="grid-cards" style="text-align: left;">
+
+          <div class="premium-card-dark">
+            <h3>Application de modération - R3st0.fr</h3>
+            <p>Application Java desktop pour la gestion des des commentaires des restaurants.</p>
+            <a href="../projets/projet8_application_R3st0.html" class="btn-projet">Voir le projet</a>
+          </div>
+
+          <div class="premium-card-dark">
+            <h3>Application Android - R3st0.fr</h3>
+            <p>Application mobile de réservation et consultation de restaurants.</p>
+            <a href="../projets/projet6_application_android_R3st0.html" class="btn-projet">Voir le projet</a>
+          </div>
+
+          <div class="premium-card-dark">
+            <h3>Site WEB - R3st0.fr</h3>
+            <p>Site web de critique et notation de restaurants.</p>
+            <a href="../projets/projet5_site_web_R3st0.html" class="btn-projet">Voir le projet</a>
+          </div>
+
+          <div class="premium-card-dark">
+            <h3>Projet de Stage</h3>
+            <p>Application mobile Android de consultation et notation d'hotels et de restaurants.</p>
+            <a href="../projets/projet4_application_AVI.html" class="btn-projet">Voir le projet</a>
+          </div>
+
+          <div class="premium-card-dark">
+            <h3>Intranet</h3>
+            <p>Application mobile Android de consultation et notation d'hotels et de restaurants.</p>
+            <a href="../projets/projet3_intranet.html" class="btn-projet">Voir le projet</a>
+          </div>
+
+          <div class="premium-card-dark">
+            <h3>Thali-mini</h3>
+            <p>Application Java desktop pour la gestion des mini-excursions d'un centre de thalassothérapie avec
+              architecture DAO et base de données MariaDB.</p>
+            <a href="../projets/projet2_thali-mini.html" class="btn-projet">Voir le projet</a>
+          </div>
+
+          <div class="premium-card-dark">
+            <h3>Projet Python : Analyse de logs</h3>
+            <p>Application Java desktop pour la gestion des mini-excursions d'un centre de thalassothérapie avec
+              architecture DAO et base de données MariaDB.</p>
+            <a href="../projets/projet1_logs.html" class="btn-projet">Voir le projet</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section dark" id="contact">
+      <div class="boxed text-center">
+        <h2 class="section-title">Contactez-moi</h2>
+        <div class="flex content-center">
+          <div class="glass-card-dark" style="max-width: 600px; text-align: center;">
+            <span class="icon text-center">
+              <img class="imgend" src="../img/email.png" alt="Icône email">
+            </span>
+            <span class="label" style="color: #fff;">E-mail</span>
+            <span class="value" style="color: rgba(255,255,255,0.8); margin-bottom: 30px;">garencechirade38@gmail.com</span>
+            <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0;">
+            <small class="end" style="color: rgba(255,255,255,0.6); display: flex; flex-direction: column; gap: 15px; align-items: center;">
+              Cette page a été réalisée dans le cadre d'un TP en BTS SIO – © tous droits réservés
+              <div style="display: flex; gap: 15px; justify-content: center; margin-top: 10px;">
+                <a href="https://www.facebook.com/">
+                  <img class="imgend" src="../img/logo_facebook.png" alt="logo_facebook" style="width: 30px;">
+                </a>
+                <a href="https://www.instagram.com/">
+                  <img class="imgend" src="../img/logo_insta.png" alt="logo_instagram" style="width: 30px;">
+                </a>
+                <a href="https://fr.pinterest.com/">
+                  <img class="imgend" src="../img/logo_pinterest.png" alt="logo_pinterest" style="width: 30px;">
+                </a>
+                <a href="https://x.com/?lang=fr">
+                  <img class="imgend" src="../img/logo_twitter.png" alt="logo_twitter" style="width: 30px;">
+                </a>
+              </div>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veille technologique - Sécurisation des API</title>
+  <link rel="stylesheet" href="../main/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="dark">
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-glass-base"></div>
+    <div class="nav-glass-tint"></div>
+    <div class="nav-glass-shine"></div>
+
+    <div class="nav-content">
+      <ul class="nav-links">
+        <li><a href="../main/index.html#home">Accueil</a></li>
+        <li><a href="../main/index.html#about">À propos</a></li>
+        <li><a href="../main/index.html#competences">Compétences</a></li>
+        <li><a href="../main/index.html#projets">Projets</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="../main/index.html#contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-spacer"></div>
+
+  <!-- Header / Slider -->
+  <div class="slider">
+    <img src="../img/comete.jpg" class="slider-background" alt="Fond espace" />
+    <div class="slider-content">
+      <h1>Veille Technologique</h1>
+      <p>La sécurisation des API : JWT & OAuth2</p>
+    </div>
+  </div>
+
+  <!-- Description / Synthèse de la veille -->
+  <div class="section dark">
+    <div class="boxed text-center">
+      <h2 class="section-title" style="color: #fff;">Synthèse de la Veille</h2>
+      
+      <div class="grid-cards" style="margin-top: 40px;">
+        
+        <!-- Enjeux -->
+        <div class="glass-card-dark text-center" style="grid-column: 1 / -1;">
+          <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #fff;">Les Enjeux de la Sécurisation des API</h3>
+          <p style="color: rgba(255,255,255,0.85); line-height: 1.6; margin-bottom: 15px;">
+            Aujourd'hui, les API (Interfaces de Programmation d'Application) sont au cœur de la majorité des architectures web modernes, des applications mobiles et des microservices. Elles permettent aux différents systèmes de communiquer et d'échanger des données critiques.
+          </p>
+          <p style="color: rgba(255,255,255,0.85); line-height: 1.6;">
+            Cette omniprésence les rend particulièrement vulnérables aux cyberattaques (usurpation d'identité, interception de données, attaques par force brute). Il est donc devenu primordial d'implémenter des mécanismes de sécurité robustes pour s'assurer que seuls les utilisateurs et les applications autorisés puissent accéder aux ressources. Deux standards dominent actuellement cette sphère : <strong>JWT</strong> et <strong>OAuth 2.0</strong>.
+          </p>
+        </div>
+
+        <!-- JWT -->
+        <div class="premium-card-dark text-center" style="grid-column: 1 / -1;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">Le Standard JWT (JSON Web Token)</h3>
+          <p style="color: rgba(255,255,255,0.85); line-height: 1.6; margin-bottom: 15px;">
+            Le <strong>JWT</strong> est un standard ouvert (RFC 7519) qui définit un moyen compact et autonome de transmettre des informations de manière sécurisée sous la forme d'un objet JSON. Les informations peuvent être vérifiées et validées car elles sont signées numériquement (via HMAC ou RSA).
+          </p>
+          <ul style="color: rgba(255,255,255,0.85); line-height: 1.6; padding-left: 0; list-style-position: inside; margin-bottom: 15px;">
+            <li style="margin-bottom: 8px;"><strong>Avantage :</strong> Stateless (sans état). Le serveur n'a pas besoin de stocker la session, ce qui facilite grandement la scalabilité.</li>
+            <li style="margin-bottom: 8px;"><strong>Inconvénient :</strong> Une fois émis, un token est difficile à révoquer avant son expiration, nécessitant des stratégies comme les <em>Refresh Tokens</em> ou des listes de révocation.</li>
+          </ul>
+        </div>
+
+        <!-- OAuth 2.0 -->
+        <div class="premium-card-dark text-center" style="grid-column: 1 / -1;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">Le Protocole OAuth 2.0</h3>
+          <p style="color: rgba(255,255,255,0.85); line-height: 1.6; margin-bottom: 15px;">
+            Contrairement à JWT qui est un format de token, <strong>OAuth 2.0</strong> est un framework d'autorisation. Il permet à une application tierce d'obtenir un accès limité à un service HTTP, soit pour le compte d'un propriétaire de ressource, soit pour son propre compte.
+          </p>
+          <ul style="color: rgba(255,255,255,0.85); line-height: 1.6; padding-left: 0; list-style-position: inside; margin-bottom: 15px;">
+            <li style="margin-bottom: 8px;"><strong>Fonctionnement :</strong> Utilise différents "flux" (Grants) selon le type d'application (ex: Authorization Code pour les apps web, Client Credentials pour le M2M).</li>
+            <li style="margin-bottom: 8px;"><strong>Séparation des rôles :</strong> Sépare clairement le client, le serveur de ressources, le serveur d'autorisation et le propriétaire des ressources.</li>
+          </ul>
+        </div>
+
+        <!-- Synergie -->
+        <div class="glass-card-dark text-center" style="grid-column: 1 / -1;">
+          <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #fff;">La Synergie : OAuth 2.0 + JWT (OIDC)</h3>
+          <p style="color: rgba(255,255,255,0.85); line-height: 1.6; margin-bottom: 15px;">
+            La tendance actuelle de l'industrie n'est pas de choisir entre JWT et OAuth2, mais de les <strong>combiner</strong>. OAuth 2.0 gère le flux de consentement et d'autorisation, tandis que JWT est utilisé comme format pour les jetons d'accès (Access Tokens) générés par le serveur d'autorisation d'OAuth 2.0.
+          </p>
+          <p style="color: rgba(255,255,255,0.85); line-height: 1.6;">
+            Cette combinaison, souvent packagée sous la surcouche d'authentification <strong>OpenID Connect (OIDC)</strong>, offre à la fois la sécurité robuste des flux OAuth et la scalabilité des jetons sans état de JWT. C'est l'architecture adoptée par la majorité des grands acteurs du web (Google, Microsoft, Facebook) et des solutions de gestion d'identité (Keycloak, Auth0).
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Flux RSS -->
+  <div class="section dark">
+    <div class="boxed text-center">
+      <h2 class="section-title" style="color: #fff;">Dernières actualités de sécurité</h2>
+      <div id="rss-cards" class="grid-cards">
+        <p class="text-center" style="color: #fff; width: 100%;">Chargement des articles...</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const RSS_URL = "https://api.rss2json.com/v1/api.json?rss_url=https://apisecurity.io/feed/index.xml";
+
+    fetch(RSS_URL)
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById("rss-cards");
+            container.innerHTML = "";
+
+            data.items.slice(0, 12).forEach(item => {
+                const card = document.createElement("div");
+                card.classList.add("premium-card-dark", "text-center"); // Utilisation du nouveau design system
+
+                card.innerHTML = `
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">${item.title}</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 20px; flex-grow: 1;">${item.description.replace(/<[^>]+>/g, '').substring(0, 150)}...</p>
+                    <a href="${item.link}" target="_blank" class="btn-projet" style="align-self: center; text-decoration: none;">Lire l’article →</a>
+                `;
+
+                container.appendChild(card);
+            });
+        })
+        .catch(error => {
+            document.getElementById("rss-cards").innerHTML =
+                "<p style='color: #ff6b6b; text-align: center; width: 100%;'>⚠️ Impossible de charger le flux RSS.</p>";
+            console.error(error);
+        });
+
+    // Toggle menu mobile
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

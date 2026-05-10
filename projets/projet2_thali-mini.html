@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Détail du projet - Thali mini</title>
+  <link rel="stylesheet" href="projet1_detail_style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-glass-base"></div>
+    <div class="nav-glass-tint"></div>
+    <div class="nav-glass-shine"></div>
+    <div class="nav-content">
+      <ul class="nav-links">
+        <li><a href="../main/index.html">Accueil</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-spacer"></div>
+
+  <!-- Header Projet -->
+  <header class="project-header text-center">
+    <div class="boxed">
+      <h1>Détail du projet : Thali mini</h1>
+      <p class="subtitle">Un aperçu complet de la réalisation du projet</p>
+    </div>
+  </header>
+
+  <!-- Image du projet -->
+  <div class="section">
+    <div class="boxed text-center">
+      <img src="../img/photo_projet_thali_mini.png" alt="Aperçu du projet" class="hero-image" />
+    </div>
+  </div>
+
+  <!-- Description du projet -->
+  <div class="section dark">
+    <div class="boxed text-center">
+      <h2 class="section-title">Description du projet</h2>
+
+      <div class="grid-cards">
+
+        <!-- Bloc : Description -->
+        <div class="glass-card-dark">
+          <h3>Description</h3>
+          <p>
+            Application Java de bureau pour la gestion des mini-excursions d'un centre de thalassothérapie avec
+            architecture DAO et base de données MariaDB.
+          </p>
+        </div>
+
+        <!-- Bloc : Contexte -->
+        <div class="glass-card-dark">
+          <h3>Contexte</h3>
+          <p>
+            THALI est un centre de thalassothérapie souhaitant proposer un catalogue de mini-excursions organisées
+            l'après-midi pour ses curistes. En tant que stagiaire chez STESIO (ESN mandatée), j'ai développé le module
+            THALI-MINI pour gérer ces excursions et leurs étapes.
+          </p>
+        </div>
+
+        <!-- Bloc : Objectifs -->
+        <div class="glass-card-dark">
+          <h3>Objectifs</h3>
+          <ul>
+            <li>Développer une application Java orientée objet avec architecture en couches</li>
+            <li>Implémenter un CRUD complet (Create, Read, Update, Delete) sur les excursions et leurs étapes</li>
+            <li>Utiliser le pattern DAO pour l'accès à la base de données MariaDB</li>
+            <li>Créer une interface graphique utilisateur avec Swing (JFrame, JDialog)</li>
+            <li>Gérer les relations entre entités (une excursion contient plusieurs étapes ordonnées)</li>
+          </ul>
+        </div>
+
+        <!-- Bloc : Fonctionnalités -->
+        <div class="glass-card-dark">
+          <h3>Fonctionnalités implémentées</h3>
+          <ul>
+            <li>Consultation de la liste des excursions avec leurs informations détaillées</li>
+            <li>Ajout, modification et suppression d'excursions</li>
+            <li>Gestion complète des étapes d'une excursion (CRUD)</li>
+            <li>Réorganisation de l'ordre des étapes (déplacement haut/bas)</li>
+            <li>Calcul automatique de la durée totale d'une excursion</li>
+            <li>Validation des données saisies avant enregistrement en base</li>
+          </ul>
+        </div>
+
+        <!-- Bloc : Technologies -->
+        <div class="glass-card-dark">
+          <h3>Technologies & outils utilisés</h3>
+          <ul>
+            <li>Langage : Java avec EDI NetBeans</li>
+            <li>Base de données : MariaDB/MySQL avec utilisateur dédié</li>
+            <li>Pattern architectural : DAO (Data Access Object)</li>
+            <li>Framework GUI : Swing (javax.swing)</li>
+            <li>Connecteur JDBC : MySQL Connector/J</li>
+          </ul>
+        </div>
+
+        <!-- Bloc : Architecture technique -->
+        <div class="glass-card-dark">
+          <h3>Architecture technique</h3>
+          <ul>
+            <li>Couche GUI (paquetage "gui") : interfaces graphiques JFrame et JDialog pour l'interaction utilisateur.
+            </li>
+            <li>Couche Métier (paquetage "modele.metier") : classes MiniExcursion et Etape représentant les données.
+            </li>
+            <li>Couche DAO (paquetage "modele.dao") : classes d'accès aux données avec requêtes SQL.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Compétences mobilisées -->
+  <div class="section">
+    <div class="boxed text-center">
+      <h2 class="section-title">Compétences Mobilisées</h2>
+
+      <div class="grid-cards">
+        <div class="premium-card-dark text-left">
+          <h3>Répondre aux incidents et évolutions (Compétence 2)</h3>
+          <p>Traiter des demandes concernant les applications : Collecte et traitement des demandes de fonctionnalités
+            du client THALI. Implémentation des différentes étapes du CRUD.</p>
+        </div>
+
+        <div class="premium-card-dark text-left">
+          <h3>Travailler en mode projet (Compétence 4)</h3>
+          <p>Analyser les objectifs et modalités : Analyse du cahier des charges fourni, identification des parties
+            prenantes.</p>
+          <p>Planifier les activités : Organisation du travail en binôme, planification des 11 étapes du projet avec
+            remise de livrables.</p>
+        </div>
+
+        <div class="premium-card-dark text-left">
+          <h3>Mettre à disposition un service (Compétence 5)</h3>
+          <p>Réaliser les tests : Conception et exécution de tests unitaires (JUnit), tests fonctionnels de l'interface
+            utilisateur, validation des données saisies.</p>
+          <p>Déployer un service : Livraison d'une application opérationnelle et conforme aux attentes.</p>
+        </div>
+
+        <div class="premium-card-dark text-left">
+          <h3>Organiser son développement (Compétence 6)</h3>
+          <p>Mettre en place son environnement : Apprentissage du pattern DAO, maîtrise de NetBeans, découverte de Swing
+            et JDBC.</p>
+          <p>Développer son projet : Utilisation de composants Swing, adaptation des classes DAO existantes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comptes rendus et livrables -->
+  <div class="section dark">
+    <div class="boxed text-center">
+      <h2 class="section-title">Comptes rendus et livrables</h2>
+
+      <div class="flex-center">
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Étape 1 - Prise en main de l'existant</h3>
+          <p>Installation de la base de données, configuration du projet NetBeans, premier test fonctionnel.</p>
+          <a href="../docs/G_03_Renouvin_Chirade_E_01.pdf" class="btn-projet">PDF Etape 1</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Étape 2 - Découverte des classes DAO</h3>
+          <p>Étude de l'architecture en couches, développement de getOneById(), tests unitaires.</p>
+          <a href="../docs/G_03_Renouvin_Chirade_E_02.pdf" class="btn-projet">PDF Etape 2</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Étape 3 - Modification de l'interface graphique</h3>
+          <p>Ajout de l'affichage de la durée totale, création des boutons CRUD, nouvelle fenêtre JDialog.</p>
+          <a href="../docs/G_03_Renouvin_Chirade_E_03.pdf" class="btn-projet">PDF Etape 3</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Étape 4 - Visualisation des données d'une excursion</h3>
+          <p>Transmission de données entre fenêtres, affichage en mode lecture seule des excursions.</p>
+          <a href="../docs/G_03_Renouvin_Chirade_E_04.pdf" class="btn-projet">PDF Etape 4</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Étape 5 - Ajout (création) d'une excursion</h3>
+          <p>Implémentation du CREATE, validation des données, gestion des erreurs, tests fonctionnels.</p>
+          <a href="../docs/G_03_Renouvin_Chirade_E_05.pdf" class="btn-projet">PDF Etape 5</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Étape 6 - Découverte de la gestion des étapes</h3>
+          <p>Analyse de l'exécutable fourni, tests fonctionnels du CRUD étapes, analyse de la clé primaire.</p>
+          <a href="../docs/G_03_Renouvin_Chirade_E_06.pdf" class="btn-projet">PDF Etape 6</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Étape 7 - Création d'une nouvelle étape</h3>
+          <p>Développement du formulaire de saisie, implémentation de l'ajout en fin de liste, validation.</p>
+          <a href="../docs/G_03_Renouvin_Chirade_E_08.pdf" class="btn-projet">PDF Etape 7</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Code source & Repository</h3>
+          <p>Archive complète du projet NetBeans avec code commenté et documentation technique.</p>
+          <a href="../docs/G_03_Renouvin_Chirade.zip" class="btn-projet">ZIP</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Navigation toggle functionality
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>

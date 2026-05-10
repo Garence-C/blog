@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Détail du projet - Analyse Logs Web & BDD</title>
+  <link rel="stylesheet" href="projet1_detail_style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-glass-base"></div>
+    <div class="nav-glass-tint"></div>
+    <div class="nav-glass-shine"></div>
+    <div class="nav-content">
+      <ul class="nav-links">
+        <li><a href="../main/index.html">Accueil</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-spacer"></div>
+
+  <!-- Header Projet -->
+  <header class="project-header text-center">
+    <div class="boxed">
+      <h1>Analyse Logs Web & BDD</h1>
+      <p class="subtitle">Un aperçu complet de la réalisation du projet</p>
+    </div>
+  </header>
+
+  <!-- Image du projet -->
+  <div class="section">
+    <div class="boxed text-center">
+      <img src="../img/photo_projet_log.png" alt="Aperçu du projet" class="hero-image" />
+    </div>
+  </div>
+
+  <!-- Description du projet -->
+  <div class="section dark">
+    <div class="boxed text-center">
+      <h2 class="section-title">Description du projet</h2>
+
+      <div class="grid-cards">
+
+        <!-- Bloc : Contexte -->
+        <div class="glass-card-dark">
+          <h3>Description</h3>
+          <p>
+            Conception et mise en place d'une solution complète pour le traitement, l'intégration et l'analyse de
+            journaux d'accès web (logs). Ce projet allie le développement de scripts d'automatisation en Python et
+            l'administration système/réseaux sous environnement Linux.
+          </p>
+        </div>
+
+        <div class="glass-card-dark">
+          <h3>Contexte</h3>
+          <p>
+            Les serveurs web (comme Apache) génèrent quotidiennement d'énormes fichiers textes appelés "logs", contenant
+            toutes les requêtes des utilisateurs. L'objectif de ce projet était de créer des outils pour parser ces
+            fichiers complexes et les transformer en données statistiques intégrables dans une base de données
+            sécurisée.
+          </p>
+        </div>
+
+        <!-- Bloc : Objectifs -->
+        <div class="glass-card-dark">
+          <h3>Objectifs</h3>
+          <ul>
+            <li>Configurer une Machine Virtuelle (VM) Linux et l'intégrer au réseau.</li>
+            <li>Déployer un serveur de base de données MariaDB.</li>
+            <li>Développer des scripts Python capables de lire, découper et analyser de lourds fichiers textes.</li>
+            <li>Générer dynamiquement des fichiers `.sql` d'insertion de données</li>
+          </ul>
+        </div>
+
+        <!-- Bloc : Sécurité -->
+        <div class="glass-card-dark">
+          <h3>Sécurisation & Administration</h3>
+          <ul>
+            <li>Application du principe du "moindre privilège" en créant des utilisateurs SQL distincts (un accès en
+              lecture seule `utilog`, un accès complet `gestionlog`).</li>
+            <li>Configuration du serveur Apache et de phpMyAdmin pour n'autoriser les connexions distantes que depuis
+              une adresse IP spécifique.</li>
+          </ul>
+        </div>
+
+        <!-- Bloc : Python -->
+        <div class="glass-card-dark">
+          <h3>Traitement de données (Python)</h3>
+          <ul>
+            <li>Générateur de pseudos : Script lisant un fichier texte pour générer automatiquement des pseudonymes
+              basés sur le nom, prénom et âge.</li>
+            <li>Analyseur de requêtes : Script avec menu interactif identifiant les URLs les plus visitées pour chaque
+              adresse IP.</li>
+            <li>Convertisseur : Transformation des lignes de logs bruts en requêtes `INSERT INTO` SQL.</li>
+          </ul>
+        </div>
+
+        <!-- Bloc : Fonctionnalités (from copy/paste of original) -->
+        <div class="glass-card-dark">
+          <h3>Fonctionnalités implémentées</h3>
+          <ul>
+            <li>Liste des restaurants : Affichage scrollable de tous les restaurants avec photo, nom et ville</li>
+            <li>Fiche détaillée : Vue complète d'un restaurant (description, adresse, horaires, types de cuisine,
+              galerie photos)</li>
+            <li>Avis et notes : Affichage des critiques utilisateurs avec système d'étoiles et calcul de note moyenne
+            </li>
+            <li>Navigation intuitive : Retour arrière, transitions entre écrans, gestion des erreurs réseau</li>
+          </ul>
+        </div>
+
+        <!-- Bloc : Technologies (from copy/paste of original) -->
+        <div class="glass-card-dark">
+          <h3>Technologies & outils utilisés</h3>
+          <ul>
+            <li>IDE : Android Studio pour le développement mobile</li>
+            <li>Langage : Java Android avec API niveau 21+ (Lollipop)</li>
+            <li>Backend : PHP 7+ pour l'API REST, MariaDB pour la base de données</li>
+            <li>Communication : HttpURLConnection, JSONObject, BufferedReader</li>
+            <li>Gestion de version : GitLab avec branches par itération</li>
+            <li>Maquettage : Canva pour les prototypes graphiques</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Compétences mobilisées -->
+  <div class="section">
+    <div class="boxed text-center">
+      <h2 class="section-title">Compétences Mobilisées</h2>
+
+      <div class="grid-cards">
+        <div class="premium-card-dark text-left">
+          <h3>Gérer le patrimoine informatique (Compétence 1)</h3>
+          <p>
+            <b>Recenser et identifier :</b> Configuration d'une machine virtuelle (Rocky Linux) avec un nom
+            d'hôte spécifique (rocky-ZOZIN.btssio182.lan).
+          </p>
+          <p>
+            <b>Mettre en place et vérifier :</b> Configuration réseau (IP, Masque, Passerelle, VLAN)
+            et test de connectivité avec la commande Ping.
+          </p>
+        </div>
+
+        <div class="premium-card-dark text-left">
+          <h3>Répondre aux incidents (Compétence 2)</h3>
+          <p>
+            <b>Traiter des demandes :</b> Modification des fichiers de configuration
+            (mariadb-server.cnf, phpMyAdmin.conf) pour autoriser et sécuriser l'accès distant à la base de données
+            depuis une machine personnelle.
+          </p>
+        </div>
+
+        <div class="premium-card-dark text-left">
+          <h3>Développer la présence en ligne (Compétence 3)</h3>
+          <p>
+            <b>Analyse du fonctionnement :</b> Compréhension et analyse approfondie de la structure des requêtes HTTP
+            (méthodes GET, POST, PUT, DELETE) et interprétation des codes de réponses (200, 404, 500) directement depuis
+            les fichiers de logs générés par le serveur Apache.
+          </p>
+        </div>
+
+        <div class="premium-card-dark text-left">
+          <h3>Mettre à disposition un service (Compétence 5)</h3>
+          <p>
+            <b>Déployer un service :</b> Installation et déploiement d'un serveur MariaDB fonctionnel.
+          </p>
+          <p>
+            <b>Gérer les accès :</b> Création de comptes utilisateurs avec une gestion fine des privilèges (création d'un
+            compte utilog en lecture seule et d'un compte gestionlog avec droits d'écriture complets).
+          </p>
+        </div>
+
+        <div class="premium-card-dark text-left">
+          <h3>Organiser son développement (Compétence 6)</h3>
+          <p>
+            <b>Exploiter des données :</b> Écriture de requêtes SQL complexes utilisant des fonctions d'agrégation (GROUP BY,
+            COUNT) pour extraire dynamiquement les URL les plus visitées de la base.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Comptes rendus et livrables -->
+  <div class="section dark">
+    <div class="boxed text-center">
+      <h2 class="section-title">Comptes rendus et livrables</h2>
+
+      <div class="flex-center">
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Compte rendu</h3>
+          <p>Création d'un script Python, mise en place de la base logs_web et exploitation des logs en SQL.</p>
+          <a href="../docs/Projet_Python_1SIO_janvier_2025.pdf" class="btn-projet">PDF Compte rendu</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Code Source Python</h3>
+          <p>Application web fonctionnelle sur serveur BTS SIO (FTP + MariaDB).</p>
+          <a href="../docs/generate_sql_insert.py" class="btn-projet">ZIP</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Navigation toggle functionality
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
