@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Détail du projet - Application Android R3st0</title>
+  <title>Détail du projet - Application React Native AVI</title>
   <link rel="stylesheet" href="projet1_detail_style.css" />
 </head>
 
@@ -31,13 +32,20 @@
     <div class="boxed">
       <h1>Application Android R3st0</h1>
       <p class="subtitle">Un aperçu complet de la réalisation du projet</p>
+      <div class="project-badges">
+        <span class="badge">📅 12/05/2025 - 20/06/2025</span>
+        <span class="badge">📅 05/01/2026 - 14/02/2026</span>
+        <span class="badge">👥 2 personnes</span>
+        <span class="badge">💻 React Native</span>
+      </div>
     </div>
   </header>
 
   <!-- Image du projet -->
   <div class="section">
     <div class="boxed text-center">
-      <img src="../img/photo_application_android.png" alt="Aperçu du projet" class="hero-image" style="width: 300px; object-fit: contain;" />
+      <img src="../img/photo_avi.png" alt="Aperçu du projet" class="hero-image"
+        style="width: 600px; object-fit: contain;" />
     </div>
   </div>
 
@@ -48,11 +56,45 @@
 
       <div class="grid-cards">
 
+        <!-- Bloc : Description -->
+        <div class="glass-card-dark">
+          <h3>Description</h3>
+          <p>
+            Le projet réalisé durant mes stages chez SCR Informatiques consiste au développement d'une application
+            mobile de gestion d'établissements destinée aux commerciaux de l'entreprise. L'application permet de
+            rechercher, consulter, noter et recommander des hôtels et restaurants visités lors des déplacements
+            professionnels.
+          </p>
+          <br>
+          <p>
+            Le projet a été développé principalement avec React Native et Expo afin de proposer une application mobile
+            moderne, ergonomique et compatible Android. Durant la deuxième année, le projet a été repris afin d'être
+            modernisé, stabilisé et enrichi avec de nouvelles fonctionnalités comme la géolocalisation, la carte
+            interactive et les interactions natives du téléphone.
+          </p>
+        </div>
+
         <!-- Bloc : Contexte -->
         <div class="glass-card-dark">
           <h3>Contexte</h3>
           <p>
-            Cette application Android mobile est le prolongement du site web R3st0.fr. Elle permet aux utilisateurs de consulter la liste des restaurants, visualiser leurs fiches détaillées (photos, avis, notes, horaires, adresse) et préparer de futures réservations directement depuis leur smartphone.
+            Ce projet a été réalisé dans le cadre de mes stages de BTS SIO option SLAM au sein de SCR Informatiques.
+          </p>
+          <br>
+          <p>
+            Lors du premier stage, l'objectif principal était de découvrir l'environnement professionnel du
+            développement mobile et de participer à la création d'une première version de l'application. Une phase
+            importante d'autoformation aux technologies React et React Native a été nécessaire avant de commencer le
+            développement.
+          </p>
+          <br>
+          <p>
+            Lors du second stage, le projet a été repris afin de poursuivre son évolution technique.
+          </p>
+          <br>
+          <p>
+            Le projet a été réalisé en binôme avec un autre stagiaire, sous la supervision du tuteur de stage Baptiste
+            Coconnier, dans une organisation inspirée des méthodes Agiles avec un suivi des tâches via Wrike.
           </p>
         </div>
 
@@ -60,11 +102,13 @@
         <div class="glass-card-dark">
           <h3>Objectifs</h3>
           <ul>
-            <li>Développer une application Android native en Java avec architecture MVC</li>
-            <li>Créer une API REST en PHP pour exposer les données du site web aux applications mobiles</li>
-            <li>Concevoir des maquettes graphiques cohérentes avec l'identité visuelle de R3st0.fr</li>
-            <li>Implémenter la consommation d'API avec requêtes HTTP asynchrones (AsyncTask)</li>
-            <li>Travailler en équipe avec méthodologie agile (sprints, daily scrums, tickets GitLab)</li>
+            <li>Développer une application mobile professionnelle permettant la gestion d'établissements</li>
+            <li>Permettre aux utilisateurs de rechercher et filtrer des hôtels et restaurants</li>
+            <li>Offrir une interface moderne et ergonomique adaptée au mobile</li>
+            <li>Mettre en place une carte interactive avec géolocalisation</li>
+            <li>Intégrer des fonctionnalités natives du téléphone (appel, mail, GPS)</li>
+            <li>Assurer la communication entre le front-end mobile et une API</li>
+            <li>Produire une version APK fonctionnelle testable sur Android</li>
           </ul>
         </div>
 
@@ -72,10 +116,17 @@
         <div class="glass-card-dark">
           <h3>Fonctionnalités implémentées</h3>
           <ul>
-            <li>Liste des restaurants : Affichage scrollable de tous les restaurants avec photo, nom et ville</li>
-            <li>Fiche détaillée : Vue complète d'un restaurant (description, adresse, horaires, types de cuisine, galerie photos)</li>
-            <li>Avis et notes : Affichage des critiques utilisateurs avec système d'étoiles et calcul de note moyenne</li>
-            <li>Navigation intuitive : Retour arrière, transitions entre écrans, gestion des erreurs réseau</li>
+            <li>Développement des interfaces mobiles en React Native</li>
+            <li>Navigation entre les écrans</li>
+            <li>Affichage et gestion des établissements</li>
+            <li>Connexion à une API et base de données PostgreSQL</li>
+            <li>Mise en place d'un système de notation</li>
+            <li>Stabilisation et mise à jour du projet</li>
+            <li>Création d'un système de filtres réutilisables</li>
+            <li>Développement d'une recherche avancée</li>
+            <li>Intégration d'une carte interactive avec géolocalisation</li>
+            <li>Ajout des fonctionnalités natives (appel, mail, GPS)</li>
+            <li>Génération d'une version APK Android</li>
           </ul>
         </div>
 
@@ -83,12 +134,11 @@
         <div class="glass-card-dark">
           <h3>Technologies & outils utilisés</h3>
           <ul>
-            <li>IDE : Android Studio pour le développement mobile</li>
-            <li>Langage : Java Android avec API niveau 21+ (Lollipop)</li>
-            <li>Backend : PHP 7+ pour l'API REST, MariaDB pour la base de données</li>
-            <li>Communication : HttpURLConnection, JSONObject, BufferedReader</li>
-            <li>Gestion de version : GitLab avec branches par itération</li>
-            <li>Maquettage : Canva pour les prototypes graphiques</li>
+            <li>Outils de développement : Visual Studio Code, GitHub</li>
+            <li>Développement mobile : React Native, Expo, TypeScript, React</li>
+            <li>Back-end & API : Fastify, Express, Prisma, TanStack Query, Zod</li>
+            <li>Base de données : PostgreSQL</li>
+            <li>Gestion de projet & conception : Wrike, Figma</li>
           </ul>
         </div>
 
@@ -103,30 +153,30 @@
 
       <div class="grid-cards">
         <div class="premium-card-dark text-left">
-          <h3>Répondre aux incidents et aux demandes d'assistance et d'évolution</h3>
+          <h3>Développer la présence en ligne (Compétence 3)</h3>
           <p>
-            Traiter des demandes concernant les applications : Traitement des tickets de développement, ajout de fonctionnalités selon les besoins exprimés (fiche détail, affichage critiques). Utilisation d'un outil de gestion de tickets (GitLab Issues). Communication écrite et orale adaptée. Compte-rendu des actions réalisées dans les rapports d'itération.
+            Création de l'application mobile AVI : recherche, filtres, carte, géolocalisation et actions natives.
           </p>
         </div>
 
         <div class="premium-card-dark text-left">
-          <h3>Travailler en mode projet</h3>
+          <h3>Travailler en mode projet (Compétence 4)</h3>
           <p>
-            Analyser les objectifs et modalités d'organisation : Analyse du cahier des charges, définition de l'architecture MVC, conception du diagramme UML, planification des itérations. L'organisation projet est explicitée. Les objectifs du projet sont explicités. L'analyse du besoin et de l'existant est pertinente. Planifier les activités : Organisation en sprints, daily scrums, répartition des tâches en tickets GitLab, gestion du backlog et des priorités. Les activités personnelles sont planifiées de façon formelle, l'avancée est documentée. Le projet est documenté et les livrables sont conformes.
+            Travail en binôme avec suivi des tâches sous méthode Agile.
           </p>
         </div>
 
         <div class="premium-card-dark text-left">
-          <h3>Mettre à disposition des utilisateurs un service informatique</h3>
+          <h3>Mettre à disposition un service informatique (Compétence 5)</h3>
           <p>
-            Réaliser les tests d'intégration et d'acceptation : Tests unitaires de l'API (Postman), tests fonctionnels de l'application mobile, gestion des cas d'erreur réseau. Les tests d'intégration et d'acceptation sont rédigés. Leur exécution est documentée.
+            Création et test d'une version APK fonctionnelle de l'application.
           </p>
         </div>
 
         <div class="premium-card-dark text-left">
-          <h3>Organiser son développement professionnel</h3>
+          <h3>Organiser son développement professionnel (Compétence 6)</h3>
           <p>
-            Mettre en place son environnement d'apprentissage : Comptes-rendus d'itération, documentation des endpoints API, commentaires du code Java et PHP, daily scrums. Maîtrise d'Android Studio (débogueur, émulateur), utilisation de GitLab (branches, merge, issues), Canva pour le design. L'environnement d'apprentissage personnel est délimité et expliqué. Développer son projet professionnel : Développement de composants Android (Activities, Layouts XML), création de l'API REST, classes DAO et métier.
+            Veille technique sur React Native et rédaction de documentation.
           </p>
         </div>
 
@@ -134,11 +184,42 @@
     </div>
   </div>
 
+  <!-- Comptes rendus et livrables -->
+  <div class="section dark">
+    <div class="boxed text-center">
+      <h2 class="section-title">Comptes rendus et livrables</h2>
+
+      <div class="flex-center">
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Rapport de stage 1</h3>
+          <p>Rapport du premier stage chez SCR Informatiques.</p>
+          <a href="../docs/Compte_rendue_stage.pdf" class="btn-projet">PDF du premier rapport</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Rapport de stage 2</h3>
+          <p>Rapport du deuxième stage chez SCR Informatiques.</p>
+          <a href="../docs/Rapport_de_stage_2026.pdf" class="btn-projet">PDF du deuxième rapport</a>
+        </div>
+
+        <div class="premium-card-dark text-left w-card">
+          <h3>Code source</h3>
+          <p>Archive complète du projet avec code.</p>
+          <a href="../docs/Avi.zip" class="btn-projet">ZIP</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
   <script>
-    document.getElementById('nav-toggle').addEventListener('click', function() {
+    document.getElementById('nav-toggle').addEventListener('click', function () {
       this.classList.toggle('active');
       document.querySelector('.nav-links').classList.toggle('active');
     });
   </script>
 </body>
+
 </html>

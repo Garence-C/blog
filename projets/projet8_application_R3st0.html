@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,13 +32,19 @@
     <div class="boxed">
       <h1>R3st0 Modération</h1>
       <p class="subtitle">Un aperçu complet de la réalisation du projet</p>
+      <div class="project-badges">
+        <span class="badge">📅 02/03/2026 - 05/04/2026</span>
+        <span class="badge">👥 3 personnes</span>
+        <span class="badge">💻 Java</span>
+      </div>
     </div>
   </header>
 
   <!-- Image du projet -->
   <div class="section">
     <div class="boxed text-center">
-      <img src="../img/photo_application_moderation.png" alt="Aperçu du projet" class="hero-image" style="width: 500px; object-fit: contain;" />
+      <img src="../img/photo_application_moderation.png" alt="Aperçu du projet" class="hero-image"
+        style="width: 500px; object-fit: contain;" />
     </div>
   </div>
 
@@ -52,14 +59,17 @@
         <div class="glass-card-dark">
           <h3>Description</h3>
           <p>
-            Application de bureau Java MVC destinée aux modérateurs et responsables du site R3st0.fr, développée en équipe selon la méthode Agile avec gestion de base de données distante. 
+            Application de bureau Java MVC destinée aux modérateurs et responsables du site R3st0.fr, développée en
+            équipe selon la méthode Agile avec gestion de base de données distante.
           </p>
         </div>
 
         <div class="glass-card-dark">
           <h3>Contexte</h3>
           <p>
-            Les propriétaires du site r3st0.fr souhaitaient se doter d'une application Java installée sur les postes de travail des modérateurs pour contrôler les avis déposés. L'outil permet de supprimer ou de bloquer la publication des avis ne respectant pas la charte.
+            Les propriétaires du site r3st0.fr souhaitaient se doter d'une application Java installée sur les postes de
+            travail des modérateurs pour contrôler les avis déposés. L'outil permet de supprimer ou de bloquer la
+            publication des avis ne respectant pas la charte.
           </p>
         </div>
 
@@ -79,7 +89,8 @@
           <ul>
             <li>Authentification : Gestion de différents rôles (modérateur, administrateur, client) stockés en BDD.</li>
             <li>Listing des avis : Affichage des avis par date décroissante ou par semaine.</li>
-            <li>Modération : Possibilité de masquer un avis avec motif, de le démasquer ou de le supprimer définitivement de la base.</li>
+            <li>Modération : Possibilité de masquer un avis avec motif, de le démasquer ou de le supprimer
+              définitivement de la base.</li>
           </ul>
         </div>
 
@@ -88,7 +99,8 @@
           <h3>Gestion de Projet Agile</h3>
           <ul>
             <li>Projet découpé en 3 itérations (sprints) avec animation de "Daily Scrums" à chaque séance.</li>
-            <li>Priorisation du Backlog avec la méthode MoSCoW (Must, Should, Could, Won't) et estimation de complexité.</li>
+            <li>Priorisation du Backlog avec la méthode MoSCoW (Must, Should, Could, Won't) et estimation de complexité.
+            </li>
             <li>Utilisation de GitLab pour la gestion de version et le travail collaboratif.</li>
           </ul>
         </div>
@@ -115,21 +127,26 @@
         <div class="premium-card-dark text-left">
           <h3>Gérer le patrimoine informatique (Compétence 1)</h3>
           <p>
-            Mettre en place les habilitations : Séparation stricte des accès via l'implémentation de rôles en base de données (admin, modérateur, client) pour limiter l'accès à certaines vues.
+            Mettre en place les habilitations : Séparation stricte des accès via l'implémentation de rôles en base de
+            données (admin, modérateur, client) pour limiter l'accès à certaines vues.
           </p>
         </div>
 
         <div class="premium-card-dark text-left">
           <h3>Répondre aux incidents et demandes d'assistance (Compétence 2)</h3>
           <p>
-            Traiter des demandes concernant les applications : Modification et évolution de la structure de la base de données existante (utilisation de requêtes ALTER TABLE pour ajouter les colonnes role, date_avis et masquer) afin de répondre aux nouveaux besoins de l'entreprise.
+            Traiter des demandes concernant les applications : Modification et évolution de la structure de la base de
+            données existante (utilisation de requêtes ALTER TABLE pour ajouter les colonnes role, date_avis et masquer)
+            afin de répondre aux nouveaux besoins de l'entreprise.
           </p>
         </div>
 
         <div class="premium-card-dark text-left">
           <h3>Travailler en mode projet</h3>
           <p>
-            Analyser les objectifs et planifier : Découpage du projet en 3 itérations agiles (sprints) via GitLab. Utilisation quotidienne des "Daily Scrums" pour définir les tâches, faire des brainstormings et assurer le suivi en équipe.
+            Analyser les objectifs et planifier : Découpage du projet en 3 itérations agiles (sprints) via GitLab.
+            Utilisation quotidienne des "Daily Scrums" pour définir les tâches, faire des brainstormings et assurer le
+            suivi en équipe.
           </p>
         </div>
 
@@ -145,34 +162,39 @@
       <div class="flex-center">
 
         <div class="premium-card-dark text-left w-card">
-            <h3>Cahier des charges & Backlog</h3>
-            <p>Directives du projet, diagrammes des cas d'utilisation et priorisation MoSCoW.</p>
-            <a href="../docs/2SLAM_projet3.pdf" class="btn-projet">PDF Cahier des charges</a>
-          </div>
+          <h3>Cahier des charges & Backlog</h3>
+          <p>Directives du projet, diagrammes des cas d'utilisation et priorisation MoSCoW.</p>
+          <a href="../docs/2SLAM_projet3.pdf" class="btn-projet">PDF Cahier des charges</a>
+        </div>
 
-          <div class="premium-card-dark text-left w-card">
-            <h3>Comptes rendus d'itérations (1, 2, 3)</h3>
-            <p>Résumé des Daily scrums, traitement des tickets GitLab, maquettage et évolution du code (MVC, requêtes SQL).</p>
-            <a href="../docs/Application_de_modération_du_site_R3st0 -Itération_1.pdf" class="btn-projet">PDF Itération 1</a>
-            <a href="../docs/Application_de_modération_du_site_R3st0 -Itération_2_G2.pdf" class="btn-projet">PDF Itération 2</a>
-            <a href="../docs/Application_de_modération_du_site_R3st0.frCompte_rendu-itération_n3.pdf" class="btn-projet">PDF Itération 3</a>
-          </div>
+        <div class="premium-card-dark text-left w-card">
+          <h3>Comptes rendus d'itérations (1, 2, 3)</h3>
+          <p>Résumé des Daily scrums, traitement des tickets GitLab, maquettage et évolution du code (MVC, requêtes
+            SQL).</p>
+          <a href="../docs/Application_de_modération_du_site_R3st0 -Itération_1.pdf" class="btn-projet">PDF Itération
+            1</a>
+          <a href="../docs/Application_de_modération_du_site_R3st0 -Itération_2_G2.pdf" class="btn-projet">PDF Itération
+            2</a>
+          <a href="../docs/Application_de_modération_du_site_R3st0.frCompte_rendu-itération_n3.pdf"
+            class="btn-projet">PDF Itération 3</a>
+        </div>
 
-          <div class="premium-card-dark text-left w-card">
-            <h3>Dépôt de code GitLab</h3>
-            <p>Code source complet du projet Java, architecture MVC, classes DAO et documentation.</p>
-            <a href="https://gitlab.com/de.jesus.vizcaino/gestion_avis" class="btn-projet">Voir sur GitLab</a>
-          </div>
+        <div class="premium-card-dark text-left w-card">
+          <h3>Dépôt de code GitLab</h3>
+          <p>Code source complet du projet Java, architecture MVC, classes DAO et documentation.</p>
+          <a href="https://gitlab.com/de.jesus.vizcaino/gestion_avis" class="btn-projet">Voir sur GitLab</a>
+        </div>
 
       </div>
     </div>
   </div>
 
   <script>
-    document.getElementById('nav-toggle').addEventListener('click', function() {
+    document.getElementById('nav-toggle').addEventListener('click', function () {
       this.classList.toggle('active');
       document.querySelector('.nav-links').classList.toggle('active');
     });
   </script>
 </body>
+
 </html>
